@@ -20,7 +20,7 @@
             <span class="sr-only">Toggle Dropdown</span>
           </button>
           <div class="dropdown-menu">
-            <button *ngFor="let video of category.videos; let i = index" class="dropdown-item" (click)="changeVideo($event)" [value]="video.img">{{ video.name }}</button>
+            <button *ngFor="let video of category.videos" class="dropdown-item" (click)="changeVideo($event)" [value]="video.img">{{ video.name }}</button>
           </div>
         </div>
       </div>
