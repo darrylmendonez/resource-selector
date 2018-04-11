@@ -18,10 +18,6 @@ export class HomeComponent implements OnInit {
     this.currentVideo = e.target.value;
     console.log(this.currentVideo);
   }
-  trackByFn(index, item) {
-    return item.id;
-  }
-
 
   constructor(private dataService: DataService, private http: HttpClient) { }
 
