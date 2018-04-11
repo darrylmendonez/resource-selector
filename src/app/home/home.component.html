@@ -1,10 +1,9 @@
 <div class="row">
   <div class="col-md-12">
-    <div class="video-container" max-height="1000px">
+    <div class="video-container">
       <div class="padding-zero embed-responsive embed-responsive-16by9">
-        <iframe id="video" class="embed-responsive-item" [src]="currentVideo" allowfullscreen></iframe>
+        <iframe id="video" class="embed-responsive-item" [src]="sanitizer.bypassSecurityTrustResourceUrl(currentVideo)" allowfullscreen></iframe>
       </div>
-      <!-- <img src="{{ currentImg }}" alt="" class="img-fluid temp-img"> -->
     </div>
   </div>
 </div>

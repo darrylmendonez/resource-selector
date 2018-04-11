@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as _ from 'underscore';
 import { DataService } from '../data.service';
 import { HttpClient } from '@angular/common/http';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +20,7 @@ export class HomeComponent implements OnInit {
     console.log(this.currentVideo);
   }
 
-  constructor(private dataService: DataService, private http: HttpClient) { }
+  constructor(private dataService: DataService, private http: HttpClient, public sanitizer: DomSanitizer) { }
 
 
   ngOnInit() {
@@ -29,7 +30,7 @@ export class HomeComponent implements OnInit {
       .subscribe(videoLibrary => {
         this.videoLibrary = videoLibrary;
         this.currentVideo = this.videoLibrary[0].videos[0].src;
-        console.log('this.currentVideo = ', this.currentVideo);
+        console.log('currentVideo = ', this.currentVideo);
       })
     // console log data
     this.dataService
