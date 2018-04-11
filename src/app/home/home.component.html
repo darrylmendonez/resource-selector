@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="video-container" max-height="1000px">
+      <!-- <div class="padding-zero embed-responsive embed-responsive-16by9">
+        <iframe id="video" class="embed-responsive-item" [src]="videoLibrary.category1.src" allowfullscreen></iframe>
+      </div> -->
+      <img src="{{ currentImg }}" alt="" class="img-fluid temp-img">
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="navigation">
+        <div *ngFor="let category of videoLibrary" class="btn-group dropup">
+          <button type="button" class="btn btn-outline-primary" [value]="category.videos[0].img" (click)="changeVideo($event)">
+            {{ category.categoryName }}
+          </button>
+          <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split video-nav-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu">
+            <button *ngFor="let video of category.videos; let i = index" class="dropdown-item" (click)="changeVideo($event)" [value]="video.img">{{ video.name }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.video-container {
+  width: 1800px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navigation {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.video-nav-btn {
+  margin-right: 25px;
+}
+
+.temp-img {
+  max-height: 1000px;
+}

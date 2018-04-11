@@ -1,0 +1,140 @@
+[
+  {
+    "LastModified": "04-11-2018",
+    "categoryId": 1,
+    "categoryName": "Category 1",
+    "videos": [
+      {
+        "videoId": 1,
+        "name": "Video 1",
+        "status": true,
+        "src": "assets/video/category1/video1.mp4",
+        "img": "https://unsplash.it/1920"
+      },
+      {
+        "videoId": 2,
+        "name": "Video 2",
+        "status": true,
+        "src": "assets/video/category1/video2.mp4",
+        "img": "https://unsplash.it/1919"
+      },
+      {
+        "videoId": 3,
+        "name": "Video 3",
+        "status": true,
+        "src": "assets/video/category1/video3.mp4",
+        "img": "https://unsplash.it/1918"
+      }
+    ]
+  },
+  {
+    "categoryId": 2,
+    "categoryName": "Category 2",
+    "videos": [
+      {
+        "videoId": 4,
+        "name": "Video 4",
+        "status": true,
+        "src": "assets/video/category2/video1.mp4",
+        "img": "https://unsplash.it/1917"
+      },
+      {
+        "videoId": 5,
+        "name": "Video 5",
+        "status": true,
+        "src": "assets/video/category2/video2.mp4",
+        "img": "https://unsplash.it/1916"
+      },
+      {
+        "videoId": 6,
+        "name": "Video 6",
+        "status": true,
+        "src": "assets/video/category2/video3.mp4",
+        "img": "https://unsplash.it/1915"
+      }
+    ]
+  },
+  {
+    "categoryId": 3,
+    "categoryName": "Category 3",
+    "videos": [
+      {
+        "videoId": 7,
+        "name": "Video 7",
+        "status": true,
+        "src": "assets/video/category3/video1.mp4",
+        "img": "https://unsplash.it/1914"
+      },
+      {
+        "videoId": 8,
+        "name": "Video 8",
+        "status": true,
+        "src": "assets/video/category8/video2.mp4",
+        "img": "https://unsplash.it/1913"
+      },
+      {
+        "videoId": 9,
+        "name": "Video 9",
+        "status": true,
+        "src": "assets/video/category3/video3.mp4",
+        "img": "https://unsplash.it/1912"
+      }
+    ]
+  },
+
+  {
+    "categoryId": 4,
+    "categoryName": "Category 4",
+    "videos": [
+      {
+        "videoId": 10,
+        "name": "Video 10",
+        "status": true,
+        "src": "assets/video/category4/video1.mp4",
+        "img": "https://unsplash.it/1911"
+      },
+      {
+        "videoId": 11,
+        "name": "Video 11",
+        "status": true,
+        "src": "assets/video/category4/video2.mp4",
+        "img": "https://unsplash.it/1910"
+      },
+      {
+        "videoId": 12,
+        "name": "Video 12",
+        "status": true,
+        "src": "assets/video/category4/video3.mp4",
+        "img": "https://unsplash.it/1909"
+      }
+    ]
+  },
+
+  {
+    "categoryId": 5,
+    "categoryName": "Category 5",
+    "videos": [
+      {
+        "videoId": 13,
+        "name": "Video 13",
+        "status": true,
+        "src": "assets/video/category5/video1.mp4",
+        "img": "https://unsplash.it/1908"
+      },
+      {
+        "videoId": 14,
+        "name": "Video 14",
+        "status": true,
+        "src": "assets/video/category5/video2.mp4",
+        "img": "https://unsplash.it/1907"
+      },
+      {
+        "videoId": 15,
+        "name": "Video 15",
+        "status": true,
+        "src": "assets/video/category5/video3.mp4",
+        "img": "https://unsplash.it/1906"
+      }
+    ]
+  }
+]
