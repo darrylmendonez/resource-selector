@@ -12,13 +12,11 @@ import { HttpClient } from '@angular/common/http';
 export class HomeComponent implements OnInit {
   currentCategory:string;
   currentVideo:string;
-  currentImg:string;
   videoLibrary:any = [];
   selectedVideo:string;
   changeVideo(e) {
-    this.selectedVideo = e.target.value;
-    this.currentImg = this.selectedVideo;
-    console.log(this.currentImg);
+    this.currentVideo = e.target.value;
+    console.log(this.currentVideo);
   }
   trackByFn(index, item) {
     return item.id;
@@ -34,7 +32,8 @@ export class HomeComponent implements OnInit {
       .map(data => data)
       .subscribe(videoLibrary => {
         this.videoLibrary = videoLibrary;
-        this.currentImg = this.videoLibrary[0].videos[0].img;
+        this.currentVideo = this.videoLibrary[0].videos[0].src;
+        console.log('this.currentVideo = ', this.currentVideo);
       })
     // console log data
     this.dataService
