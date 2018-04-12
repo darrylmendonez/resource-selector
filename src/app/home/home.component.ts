@@ -20,7 +20,9 @@ export class HomeComponent implements OnInit {
     console.log(this.currentVideo);
   }
 
-  constructor(private dataService: DataService, private http: HttpClient, public sanitizer: DomSanitizer) { }
+  constructor(private dataService: DataService,
+    private http: HttpClient,
+    public sanitizer: DomSanitizer) { }
 
 
   ngOnInit() {
