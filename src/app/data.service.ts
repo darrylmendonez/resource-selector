@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/Observable';
 export class DataService {
   constructor(private http: Http) {}
 
-  fetchresourceLibrary() {
+  fetchResourceLibrary() {
     return this.http.get('./assets/data/resourceLibrary.json').map(res => res.json());
   }
 

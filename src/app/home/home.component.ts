@@ -25,16 +25,16 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.dataService
-      .fetchresourceLibrary()
+      .fetchResourceLibrary()
       .map(data => data)
       .subscribe(resourceLibrary => {
         this.resourceLibrary = resourceLibrary;
-        this.currentVideo = this.resourceLibrary[0].videos[0].src;
+        this.currentVideo = this.resourceLibrary[0].resources[0].src;
         console.log('currentVideo = ', this.currentVideo);
       })
     // console log data
     this.dataService
-      .fetchresourceLibrary()
+      .fetchResourceLibrary()
       .subscribe(
         (data) => console.log(data)
       )
