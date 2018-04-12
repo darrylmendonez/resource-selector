@@ -13,7 +13,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class HomeComponent implements OnInit {
   currentCategory:string;
   currentVideo:string;
-  videoLibrary:any = [];
+  resourceLibrary:any = [];
   selectedVideo:string;
   changeVideo(e) {
     this.currentVideo = e.target.value;
@@ -25,16 +25,16 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.dataService
-      .fetchVideoLibrary()
+      .fetchresourceLibrary()
       .map(data => data)
-      .subscribe(videoLibrary => {
-        this.videoLibrary = videoLibrary;
-        this.currentVideo = this.videoLibrary[0].videos[0].src;
+      .subscribe(resourceLibrary => {
+        this.resourceLibrary = resourceLibrary;
+        this.currentVideo = this.resourceLibrary[0].videos[0].src;
         console.log('currentVideo = ', this.currentVideo);
       })
     // console log data
     this.dataService
-      .fetchVideoLibrary()
+      .fetchresourceLibrary()
       .subscribe(
         (data) => console.log(data)
       )

@@ -11,7 +11,7 @@
   <div class="row">
     <div class="col-md-12">
       <div class="navigation">
-        <div *ngFor="let category of videoLibrary" class="btn-group dropup">
+        <div *ngFor="let category of resourceLibrary" class="btn-group dropup">
           <button type="button" class="btn btn-outline-primary" [value]="category.videos[0].src" (click)="changeVideo($event)">
             {{ category.categoryName }}
           </button>
