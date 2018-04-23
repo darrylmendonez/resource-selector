@@ -19,7 +19,7 @@
             <span class="sr-only">Toggle Dropdown</span>
           </button>
           <div class="dropdown-menu">
-            <button *ngFor="let video of category.resources | reverse" class="dropdown-item" (click)="changeVideo($event)" [value]="video.src">{{ video.btnName }}</button>
+            <button *ngFor="let video of category.resources | reverse" class="dropdown-item" (click)="changeVideo($event)" [value]="video.src" data-Type="video.type">{{ video.btnName }}</button>
           </div>
         </div>
       </div>

@@ -13,11 +13,15 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class HomeComponent implements OnInit {
   currentCategory:string;
   currentVideo:string;
+  currentType:string;
   resourceLibrary:any = [];
   selectedVideo:string;
   changeVideo(e) {
     this.currentVideo = e.target.value;
-    console.log(this.currentVideo);
+    this.currentType = e.target.dataType;
+    console.log('e.target = ', e.target);
+    console.log('currentType = ', this.currentType)
+    console.log('currentVideo = ', this.currentVideo);
   }
 
   constructor(private dataService: DataService,

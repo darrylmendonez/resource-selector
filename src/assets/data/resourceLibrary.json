@@ -1,0 +1,110 @@
+[
+  {
+    "LastModified": "04-11-2018",
+    "categoryId": 1,
+    "categoryName": "Category 1",
+    "resources": [
+      {
+        "btnName": "Video 1",
+        "type": "video",
+        "src": "assets/resources/category1/video1.mp4"
+      },
+      {
+        "btnName": "Video 2",
+        "type": "video",
+        "src": "assets/resources/category1/video2.mp4"
+      },
+      {
+        "btnName": "Video 3",
+        "type": "video",
+        "src": "assets/resources/category1/video3.mp4"
+      }
+    ]
+  },
+  {
+    "categoryId": 2,
+    "categoryName": "Category 2",
+    "resources": [
+      {
+        "btnName": "Video 4",
+        "type": "video",
+        "src": "assets/resources/category2/video1.mp4"
+      },
+      {
+        "btnName": "Video 5",
+        "type": "video",
+        "src": "assets/resources/category2/video2.mp4"
+      },
+      {
+        "btnName": "Video 6",
+        "type": "video",
+        "src": "assets/resources/category2/video3.mp4"
+      }
+    ]
+  },
+  {
+    "categoryId": 3,
+    "categoryName": "Category 3",
+    "resources": [
+      {
+        "btnName": "Video 7",
+        "type": "video",
+        "src": "assets/resources/category3/video1.mp4"
+      },
+      {
+        "btnName": "Video 8",
+        "type": "video",
+        "src": "assets/resources/category8/video2.mp4"
+      },
+      {
+        "btnName": "Video 9",
+        "type": "video",
+        "src": "assets/resources/category3/video3.mp4"
+      }
+    ]
+  },
+
+  {
+    "categoryId": 4,
+    "categoryName": "Category 4",
+    "resources": [
+      {
+        "btnName": "Video 10",
+        "type": "video",
+        "src": "assets/resources/category4/video1.mp4"
+      },
+      {
+        "btnName": "Video 11",
+        "type": "video",
+        "src": "assets/resources/category4/video2.mp4"
+      },
+      {
+        "btnName": "Video 12",
+        "type": "video",
+        "src": "assets/resources/category4/video3.mp4"
+      }
+    ]
+  },
+
+  {
+    "categoryId": 5,
+    "categoryName": "Category 5",
+    "resources": [
+      {
+        "btnName": "Video 13",
+        "type": "video",
+        "src": "assets/resources/category5/video1.mp4"
+      },
+      {
+        "btnName": "Video 14",
+        "type": "video",
+        "src": "assets/resources/category5/video2.mp4"
+      },
+      {
+        "btnName": "Video 15",
+        "type": "video",
+        "src": "assets/resources/category5/video3.mp4"
+      }
+    ]
+  }
+]
