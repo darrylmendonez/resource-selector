@@ -2,108 +2,108 @@
   {
     "LastModified": "04-11-2018",
     "categoryId": 1,
-    "categoryName": "Category 1",
+    "categoryName": "Plants",
     "resources": [
       {
-        "btnName": "Video 1",
+        "btnName": "Flower",
         "type": "video",
-        "src": "assets/resources/category1/video1.mp4"
+        "src": "assets/resources/plants/flower.mp4"
       },
       {
-        "btnName": "Video 2",
+        "btnName": "Green Field",
         "type": "video",
-        "src": "assets/resources/category1/video2.mp4"
+        "src": "assets/resources/plants/green-field.mp4"
       },
       {
-        "btnName": "Video 3",
+        "btnName": "Grape Vine",
         "type": "video",
-        "src": "assets/resources/category1/video3.mp4"
+        "src": "assets/resources/plants/grape-vine.mp4"
       }
     ]
   },
   {
     "categoryId": 2,
-    "categoryName": "Category 2",
+    "categoryName": "Animals",
     "resources": [
       {
-        "btnName": "Video 4",
+        "btnName": "Duck",
         "type": "video",
-        "src": "assets/resources/category2/video1.mp4"
+        "src": "assets/resources/animals/duck.mp4"
       },
       {
-        "btnName": "Video 5",
+        "btnName": "Fish",
         "type": "video",
-        "src": "assets/resources/category2/video2.mp4"
+        "src": "assets/resources/animals/fish.mp4"
       },
       {
-        "btnName": "Video 6",
+        "btnName": "Sea Gulls",
         "type": "video",
-        "src": "assets/resources/category2/video3.mp4"
+        "src": "assets/resources/animals/seagulls.mp4"
       }
     ]
   },
   {
     "categoryId": 3,
-    "categoryName": "Category 3",
+    "categoryName": "Landscapes",
     "resources": [
       {
-        "btnName": "Video 7",
+        "btnName": "Beach",
         "type": "video",
-        "src": "assets/resources/category3/video1.mp4"
+        "src": "assets/resources/landscapes/beach.mp4"
       },
       {
-        "btnName": "Video 8",
+        "btnName": "Snow Mountain",
         "type": "video",
-        "src": "assets/resources/category8/video2.mp4"
+        "src": "assets/resources/landscapes/snow-mountain.mp4"
       },
       {
-        "btnName": "Video 9",
+        "btnName": "Green Mountains",
         "type": "video",
-        "src": "assets/resources/category3/video3.mp4"
+        "src": "assets/resources/landscapes/green-mountains.mp4"
       }
     ]
   },
 
   {
     "categoryId": 4,
-    "categoryName": "Category 4",
+    "categoryName": "Cafe",
     "resources": [
       {
-        "btnName": "Video 10",
+        "btnName": "Espresso Machine",
         "type": "video",
-        "src": "assets/resources/category4/video1.mp4"
+        "src": "assets/resources/cafe/espresso-machine.mp4"
       },
       {
-        "btnName": "Video 11",
+        "btnName": "Sugar Fix",
         "type": "video",
-        "src": "assets/resources/category4/video2.mp4"
+        "src": "assets/resources/cafe/sugar-fix.mp4"
       },
       {
-        "btnName": "Video 12",
+        "btnName": "Ristretto",
         "type": "video",
-        "src": "assets/resources/category4/video3.mp4"
+        "src": "assets/resources/cafe/ristretto.mp4"
       }
     ]
   },
 
   {
     "categoryId": 5,
-    "categoryName": "Category 5",
+    "categoryName": "Dogs",
     "resources": [
       {
-        "btnName": "Video 13",
+        "btnName": "Thirsty Dog",
         "type": "video",
-        "src": "assets/resources/category5/video1.mp4"
+        "src": "assets/resources/dogs/thirsty-dog.mp4"
       },
       {
-        "btnName": "Video 14",
+        "btnName": "At the Beach",
         "type": "video",
-        "src": "assets/resources/category5/video2.mp4"
+        "src": "assets/resources/dogs/at-the-beach.mp4"
       },
       {
-        "btnName": "Video 15",
+        "btnName": "Curious Dog",
         "type": "video",
-        "src": "assets/resources/category5/video3.mp4"
+        "src": "assets/resources/dogs/curious-dog.mp4"
       }
     ]
   }
