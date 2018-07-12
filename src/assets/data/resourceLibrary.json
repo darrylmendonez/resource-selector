@@ -2,28 +2,33 @@
   {
     "LastModified": "04-11-2018",
     "categoryId": 1,
-    "categoryName": "Plants",
+    "categoryName": "Clinical Trials",
     "resources": [
       {
-        "btnName": "Flower",
+        "btnName": "Treatment Research",
         "type": "video",
         "src": "assets/resources/plants/flower.mp4"
       },
       {
-        "btnName": "Green Field",
+        "btnName": "Prevention Research",
         "type": "video",
         "src": "assets/resources/plants/green-field.mp4"
       },
       {
-        "btnName": "Grape Vine",
+        "btnName": "Diagnostic Research",
         "type": "video",
         "src": "assets/resources/plants/grape-vine.mp4"
+      },
+      {
+        "btnName": "Screening Research",
+        "type": "image",
+        "src": "assets/resources/plants/corn-stock.jpg"
       }
     ]
   },
   {
     "categoryId": 2,
-    "categoryName": "Animals",
+    "categoryName": "Pipeline",
     "resources": [
       {
         "btnName": "Duck",
@@ -44,7 +49,7 @@
   },
   {
     "categoryId": 3,
-    "categoryName": "Landscapes",
+    "categoryName": "Mechanism of Disease",
     "resources": [
       {
         "btnName": "Beach",
@@ -66,7 +71,7 @@
 
   {
     "categoryId": 4,
-    "categoryName": "Cafe",
+    "categoryName": "Cell Manufacturing",
     "resources": [
       {
         "btnName": "Espresso Machine",
@@ -88,7 +93,7 @@
 
   {
     "categoryId": 5,
-    "categoryName": "Dogs",
+    "categoryName": "Infusion Process",
     "resources": [
       {
         "btnName": "Thirsty Dog",
@@ -100,6 +105,12 @@
         "type": "video",
         "src": "assets/resources/dogs/at-the-beach.mp4"
       },
+      {
+        "btnName": "Curious Dog",
+        "type": "video",
+        "src": "assets/resources/dogs/curious-dog.mp4"
+      }
+      ,
       {
         "btnName": "Curious Dog",
         "type": "video",

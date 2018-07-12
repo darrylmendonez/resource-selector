@@ -2,7 +2,8 @@
   <div class="col-md-12">
     <div class="video-container">
       <div class="padding-zero embed-responsive embed-responsive-16by9">
-        <iframe id="video" class="embed-responsive-item" [src]="sanitizer.bypassSecurityTrustResourceUrl(currentVideo)" allowfullscreen></iframe>
+        <video id="video" class="embed-responsive-item" [src]="sanitizer.bypassSecurityTrustResourceUrl(currentResource)" allowfullscreen autoplay onended="angular.element(this).scope().autoChangeVideo()"></video>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/bctaWQTYHJc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen autoplay></iframe> -->
       </div>
     </div>
   </div>
@@ -19,7 +20,7 @@
             <span class="sr-only">Toggle Dropdown</span>
           </button>
           <div class="dropdown-menu">
-            <button *ngFor="let video of category.resources | reverse" class="dropdown-item" (click)="changeVideo($event)" [value]="video.src" data-Type="video.type">{{ video.btnName }}</button>
+            <button *ngFor="let resource of category.resources" class="dropdown-item" (click)="changeVideo($event)" [value]="resource.src">{{ resource.btnName }}</button>
           </div>
         </div>
       </div>

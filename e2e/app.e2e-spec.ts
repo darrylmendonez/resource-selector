@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('video-selector App', () => {
+describe('resource-selector App', () => {
   let page: AppPage;
 
   beforeEach(() => {

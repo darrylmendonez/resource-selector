@@ -12,16 +12,20 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class HomeComponent implements OnInit {
   currentCategory:string;
-  currentVideo:string;
-  currentType:string;
+  currentResource:string;
+  currentType:string = 'video'; //default
   resourceLibrary:any = [];
   selectedVideo:string;
   changeVideo(e) {
-    this.currentVideo = e.target.value;
+    this.currentResource = e.target.value;
     this.currentType = e.target.dataType;
     console.log('e.target = ', e.target);
     console.log('currentType = ', this.currentType)
-    console.log('currentVideo = ', this.currentVideo);
+    console.log('currentResource = ', this.currentResource);
+  }
+
+  autoChangeVideo() {
+    console.log('autoChangeVideo fired');
   }
 
   constructor(private dataService: DataService,
@@ -35,8 +39,8 @@ export class HomeComponent implements OnInit {
       .map(data => data)
       .subscribe(resourceLibrary => {
         this.resourceLibrary = resourceLibrary;
-        this.currentVideo = this.resourceLibrary[0].resources[0].src;
-        console.log('currentVideo = ', this.currentVideo);
+        this.currentResource = this.resourceLibrary[0].resources[0].src; // default video
+        console.log('currentResource = ', this.currentResource);
       })
     // console log data
     this.dataService
@@ -44,7 +48,6 @@ export class HomeComponent implements OnInit {
       .subscribe(
         (data) => console.log(data)
       )
-
   } // /ngOnInit()
 
 }
