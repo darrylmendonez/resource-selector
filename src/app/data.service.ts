@@ -7,8 +7,8 @@ import { Observable } from 'rxjs/Observable';
 export class DataService {
   constructor(private http: Http) {}
 
-  fetchResourceLibrary() {
-    return this.http.get('./assets/data/resourceLibrary.json').map(res => res.json());
+  fetchvideoLibrary() {
+    return this.http.get('./assets/data/videoLibrary.json').map(res => res.json());
   }
 
 }

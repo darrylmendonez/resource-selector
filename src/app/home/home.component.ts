@@ -12,20 +12,22 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class HomeComponent implements OnInit {
   currentCategory:string;
-  currentResource:string;
-  currentType:string = 'video'; //default
-  resourceLibrary:any = [];
+  currentVideo:string;
+  currentId:number = 0;
+  videoLibrary:any = [];
   selectedVideo:string;
+
   changeVideo(e) {
-    this.currentResource = e.target.value;
-    this.currentType = e.target.dataType;
-    console.log('e.target = ', e.target);
-    console.log('currentType = ', this.currentType)
-    console.log('currentResource = ', this.currentResource);
+    this.currentId = e.target.value;
+    this.currentVideo = this.videoLibrary[this.currentId].videoPath;
   }
 
   autoChangeVideo() {
-    console.log('autoChangeVideo fired');
+    this.currentId = this.currentId + 1;
+    if (this.currentId >= this.videoLibrary.length) {
+      this.currentId = 0;
+    }
+    this.currentVideo = this.videoLibrary[this.currentId].videoPath;
   }
 
   constructor(private dataService: DataService,
@@ -35,16 +37,16 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.dataService
-      .fetchResourceLibrary()
+      .fetchvideoLibrary()
       .map(data => data)
-      .subscribe(resourceLibrary => {
-        this.resourceLibrary = resourceLibrary;
-        this.currentResource = this.resourceLibrary[0].resources[0].src; // default video
-        console.log('currentResource = ', this.currentResource);
+      .subscribe(videoLibrary => {
+        this.videoLibrary = videoLibrary;
+        this.currentVideo = this.videoLibrary[0].videoPath; // default video
+        console.log('currentVideo = ', this.currentVideo);
       })
     // console log data
     this.dataService
-      .fetchResourceLibrary()
+      .fetchvideoLibrary()
       .subscribe(
         (data) => console.log(data)
       )
