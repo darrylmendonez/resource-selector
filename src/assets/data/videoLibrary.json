@@ -1,29 +1,34 @@
 [
   {
     "id": 0,
+    "chapter": 1,
     "buttonName": "Clinical Trials",
-    "videoPath": "assets/video/flower.mp4"
+    "videoPath": "assets/video/chapter1.mp4"
   },
   {
     "id": 1,
+    "chapter": 2,
     "buttonName": "Pipeline",
-    "videoPath": "assets/video/duck.mp4"
+    "videoPath": "assets/video/chapter2.mp4"
   },
   {
     "id": 2,
+    "chapter": 3,
     "buttonName": "Mechanism of Disease",
-    "videoPath": "assets/video/beach.mp4"
+    "videoPath": "assets/video/chapter3.mp4"
   },
 
   {
     "id": 3,
+    "chapter": 4,
     "buttonName": "Cell Manufacturing",
-    "videoPath": "assets/video/espresso-machine.mp4"
+    "videoPath": "assets/video/chapter4.mp4"
   },
 
   {
     "id": 4,
+    "chapter": 5,
     "buttonName": "Infusion Process",
-    "videoPath": "assets/video/curious-dog.mp4"
+    "videoPath": "assets/video/chapter5.mp4"
   }
 ]

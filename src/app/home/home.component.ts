@@ -27,6 +27,7 @@ export class HomeComponent implements OnInit {
     if (this.currentId >= this.videoLibrary.length) {
       this.currentId = 0;
     }
+    console.log('currentId = ', this.currentId);
     this.currentVideo = this.videoLibrary[this.currentId].videoPath;
   }
 
